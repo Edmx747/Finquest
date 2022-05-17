@@ -1,0 +1,15 @@
+app-sidebar{
+    display: block;
+}
+.dashboard {
+    display: flex;
+    background-color: aquamarine;
+    .sidebar{
+        flex: 0 0 auto;
+        width: 15%;
+    }
+    .content{
+        flex: 0 0 auto;
+        width: 85%;
+    }
+}

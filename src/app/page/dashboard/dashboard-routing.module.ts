@@ -6,6 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    children: [
+      {
+        path: 'users',
+        loadChildren: () => import('../users/users.module').then(m => m.UsersModule)
+      }
+    ]
   }
 ];
 
