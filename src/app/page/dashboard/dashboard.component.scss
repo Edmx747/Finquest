@@ -2,14 +2,22 @@ app-sidebar{
     display: block;
 }
 .dashboard {
-    display: flex;
-    background-color: aquamarine;
-    .sidebar{
-        flex: 0 0 auto;
-        width: 15%;
-    }
     .content{
-        flex: 0 0 auto;
-        width: 85%;
+        position: relative;
+        top: 60px;
+        right: -20vw;
+        width: 80vw;
+        height: 100vh;
+        background-color: aquamarine;
     }
+}
+
+@media (max-width: 480px) {
+    .dashboard{
+        .content {
+            left: 0;
+            width: 100vw;
+        }
+    }
+
 }

@@ -4,11 +4,11 @@ export const SIDEBAR_ITEMS: SidebarItem[] = [
     {
         name: "Home",
         icon: "bi bi-house-fill",
-        link: "/home"
+        link: "home"
     },
     {
         name: "Users",
         icon: "bi bi-people-fill",
-        link: "/users"
+        link: "users"
     }
 ]
