@@ -1,8 +1,0 @@
-<div class="sidebar">
-    <div class="sidebar-items" *ngFor="let item of sidebarItems" >
-        <a class="nav-link sidebar-item" [routerLink]="[{ outlets: { dashboard: [item.link] } }]" routerLinkActive="active">
-            <i class="{{item.icon}}"></i>
-            <span class="item-label">{{item.name}}</span>
-        </a>
-    </div>
-</div>

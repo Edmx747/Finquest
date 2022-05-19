@@ -1,23 +1,40 @@
-app-sidebar{
-    display: block;
+app-header {
+    width: 100%;
 }
-.dashboard {
-    .content{
-        position: relative;
-        top: 60px;
-        right: -20vw;
-        width: 80vw;
-        height: 100vh;
-        background-color: aquamarine;
-    }
-}
-
-@media (max-width: 480px) {
-    .dashboard{
-        .content {
-            left: 0;
-            width: 100vw;
+.dashboard{
+    &-toolbar{
+        padding: inherit !important;
+        background: var(--color-primary);
+        @media (min-width: 480px) {
+            button{
+                display: none;
+            }
+        }
+        button {
+            background: transparent;
+        }
+        mat-icon{
+            color: white;
         }
     }
-
+    &-sidenav{
+        background: var(--color-primary-light);
+        width: 200px;
+        color: white;
+        .mat-list-item{
+            color: white;
+            &.mat-list-item-selected{
+                background: var(--color-primary);
+                color: white;
+            }
+        }
+    }
 }
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
